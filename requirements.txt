@@ -1,10 +1,27 @@
+# MistakeMind AI - Major Dependencies
+
 next
 react
 react-dom
 typescript
 tailwindcss
+
 @supabase/supabase-js
+
 @groq/groq-sdk
+
 @google/generative-ai
+
 react-markdown
+
 recharts
+
+pg
+
+dotenv
+
+# Note:
+
+# This project is built using Node.js and Next.js.
+
+# The complete dependency list is available in package.json.
