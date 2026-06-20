@@ -1,0 +1,10 @@
+next
+react
+react-dom
+typescript
+tailwindcss
+@supabase/supabase-js
+@groq/groq-sdk
+@google/generative-ai
+react-markdown
+recharts

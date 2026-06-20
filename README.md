@@ -1,36 +1,283 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MistakeMind AI 🚀
 
-## Getting Started
+## AI-Powered Coding Mistake Learning Platform
 
-First, run the development server:
+MistakeMind AI is an intelligent learning platform designed to help programmers track, analyze, and learn from their coding mistakes.
+
+Instead of forgetting errors after solving them, users can store mistakes, receive AI-generated explanations, search similar mistakes using semantic search, and get personalized learning recommendations through an AI Coach.
+
+The goal of the platform is to transform coding mistakes into a structured learning resource and accelerate problem-solving skills.
+
+---
+
+# Live Demo
+
+Deployment URL:
+
+https://mistakemind-ai.vercel.app
+
+---
+
+# Problem Statement
+
+Many programmers repeatedly make similar coding mistakes while solving Data Structures and Algorithms problems.
+
+Traditional note-taking methods do not provide:
+
+* AI-powered analysis
+* Pattern detection
+* Similar mistake retrieval
+* Personalized learning guidance
+
+MistakeMind AI solves this problem by creating a searchable and intelligent mistake knowledge base.
+
+---
+
+# Features
+
+## Authentication
+
+* User Signup
+* User Login
+* Secure Session Management
+* Password Update
+
+## Mistake Tracking
+
+* Save coding mistakes
+* Store wrong code snippets
+* Record runtime/compiler errors
+* Categorize mistakes by topic
+
+## AI Mistake Analysis
+
+Automatically analyzes mistakes and provides:
+
+* Root Cause Analysis
+* Explanation of the Error
+* Confidence Score
+* Improvement Suggestions
+
+## Semantic Search
+
+Search mistakes using natural language.
+
+Examples:
+
+* binary search infinite loop
+* linked list pointer issue
+* dp update mistake
+
+Uses vector embeddings to find semantically similar mistakes.
+
+## AI Coach
+
+Ask questions such as:
+
+* Why am I making binary search mistakes?
+* What are my weak topics?
+* How can I improve my DP skills?
+
+AI Coach analyzes historical mistakes and generates personalized advice.
+
+## Analytics Dashboard
+
+Provides:
+
+* Total Mistakes
+* AI Analyses
+* Average Confidence Score
+* Topics Covered
+* Mistakes by Topic Chart
+* Confidence Trend Chart
+
+## Mistake Library
+
+* View all mistakes
+* Search mistakes
+* Manage learning history
+
+---
+
+# System Architecture
+
+User
+↓
+Next.js Frontend
+↓
+Next.js API Routes
+↓
+Supabase PostgreSQL Database
+↓
+AI Services
+
+* Groq Llama 3.3 70B
+* Google Gemini Embeddings
+
+---
+
+# Tech Stack
+
+## Frontend
+
+* Next.js 15
+* React
+* TypeScript
+* Tailwind CSS
+
+## Backend
+
+* Next.js API Routes
+
+## Database
+
+* Supabase
+* PostgreSQL
+* pgvector
+
+## AI Services
+
+### Groq
+
+Used for:
+
+* Mistake Analysis
+* AI Coach
+* Learning Recommendations
+
+Model:
+
+* Llama 3.3 70B Versatile
+
+### Google Gemini
+
+Used for:
+
+* Vector Embeddings
+* Semantic Search
+
+Model:
+
+* text-embedding-004
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/mistakemind-ai.git
+
+cd mistakemind-ai
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create environment variables:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+
+GROQ_API_KEY=
+
+GEMINI_API_KEY=
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+mistakemind-ai/
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+├── app/
+├── components/
+├── lib/
+├── public/
+├── screenshots/
+├── README.md
+├── requirements.txt
+├── development-log.md
+└── package.json
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The following screenshots are available inside the screenshots folder:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. login-page.png
+2. dashboard-page.png
+3. add-mistake-page.png
+4. mistake-library-page.png
+5. semantic-search-page.png
+6. ai-coach-page.png
+7. settings-page.png
+
+---
+
+# Future Enhancements
+
+* Weekly Learning Reports
+* Smart Practice Recommendations
+* Learning Streak System
+* LeetCode Integration
+* Interview Preparation Mode
+* AI-Generated Revision Notes
+* Topic Mastery Tracking
+
+---
+
+# Learning Outcomes
+
+This project demonstrates:
+
+* Full Stack Development
+* Authentication Systems
+* Database Design
+* Vector Databases
+* Semantic Search
+* AI Integration
+* Prompt Engineering
+* API Development
+* Deployment using Vercel
+
+---
+
+# Author
+
+**Jyotiraditya Basantia**
+
+Computer Science Engineering Student
+
+Project: MistakeMind AI
+
+Version: 1.0
+
+Year: 2026
+
+---
+
+# License
+
+This project is developed for educational and academic purposes.
